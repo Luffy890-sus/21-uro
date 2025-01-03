@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  max-width: 1450px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.card {
+  width: 300px;
+  height: 410px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px 20px;
+  .img {
+    height: 200px;
+  }
+}
+
+.fon {
+  position: absolute;
+  background-color: black;
+  z-index: -2;
+  height: 2700px;
+  max-width: 1920px;
+}
+
+.text {
+  font-family: "Silkscreen", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.text2 {
+    font-family: "Silkscreen", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: right;
+    
+  }
+
+  .ggi {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    .btn{
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+    border: 2px solid #6B59CC;
+    border-radius: 8px;
+    }
+  }
