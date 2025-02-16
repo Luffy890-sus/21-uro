@@ -60,7 +60,7 @@ body {
   .ggi {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: -30px;
     justify-content: space-between;
     .btn{
         color: #fff;
@@ -71,3 +71,17 @@ body {
     border-radius: 8px;
     }
   }
+
+  .stars {
+    font-size: 20px;
+    color: gold;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .rating-text {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  
