@@ -2,7 +2,6 @@ const response = new XMLHttpRequest();
 const cards = document.querySelector(".cards");
 response.open("GET", "./db.json");
 response.send();
-
 response.addEventListener("readystatechange", () => {
     if (response.readyState === 4 && response.status === 200) {
         getData(JSON.parse(response.responseText));
@@ -10,22 +9,18 @@ response.addEventListener("readystatechange", () => {
         console.log("Ошибка загрузки:", response.responseText);
     }
 });
-
 function getData(data) {
     data.forEach((value) => {
         let card = document.createElement("div");
         card.classList.add("card");
-
-        // Функция для генерации звёзд на основе рейтинга
         function generateStars(rating) {
             let stars = "";
-            let roundedRating = Math.round(rating); // Округляем рейтинг
+            let roundedRating = Math.round(rating);
             for (let i = 1; i <= 5; i++) {
                 stars += i <= roundedRating ? "⭐" : "☆";
             }
             return stars;
         }
-
         card.innerHTML = `
          <center>
            <img class="img" src="${value.image}" alt="Product Image">
